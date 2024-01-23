@@ -742,10 +742,12 @@ Banner Style
   background-size: cover;
   padding: 220px 20% 320px 20%;
   margin-top: 0px;
+  
 }
 
 .main-banner .item-1 {
   background-image: url(../images/banner-01.jpg);
+  
 }
 
 .main-banner .item-2 {
@@ -755,6 +757,9 @@ Banner Style
 .main-banner .item-3 {
   background-image: url(../images/banner-03.jpg);
 }
+
+
+
 
 .main-banner .item span.category {
   background-color: #fff;
@@ -778,7 +783,7 @@ Banner Style
   text-transform: uppercase;
   color: #fff;
   line-height: 72px;
-  width: 50%;
+  width: 70%;
   margin-bottom: 0px;
 }
 
