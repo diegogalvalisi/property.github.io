@@ -1276,10 +1276,12 @@ Contact Style
   margin-left: 15px;
 }
 
-.contact-content .item img {
+.contact-content .item i {
   float: left;
   margin-right: 25px;
   vertical-align: middle;
+  color: #4E8A3E;
+  font-size: 52px
 }
 
 .contact-content .item h6 {
