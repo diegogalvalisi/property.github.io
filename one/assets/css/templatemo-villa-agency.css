@@ -996,6 +996,10 @@ Video Style
   border-radius: 10px;
 }
 
+.video-content .video-frame iframe {
+  border-radius: 10px;
+}
+
 .video-content .video-frame img {
   border-radius: 10px;
 }
@@ -1013,7 +1017,7 @@ Video Style
   text-align: center;
   line-height: 52px;
   color: #4E8A3E;
-  outline: 15px solid rgba(254, 85, 37, 0.5);
+  outline: 15px solid rgba(78, 138, 62, 0.5);
   font-size: 18px;
 }
 
