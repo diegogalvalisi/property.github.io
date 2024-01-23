@@ -960,6 +960,13 @@ Featured Style
   font-weight: 400;
 }
 
+.featured .info-table ul li i {
+  float: left;
+  margin-right: 25px;
+  font-size: 52px;
+  color: #4E8A3E;
+}
+
 /* 
 ---------------------------------------------
 Video Style
