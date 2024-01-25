@@ -1297,6 +1297,7 @@ Contact Style
   font-size: 15px;
   color: #3a3a3a;
   margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .contact-content #contact-form p {
@@ -1305,7 +1306,7 @@ Contact Style
   margin-bottom: 10px;
   font-size: 14px;
   padding: 5px 10px;
-  border-bottom: 1px dotted #3a3a3a;
+  border-bottom: 1px solid #eee;
 }
 
 .contact-content #contact-form textarea {
