@@ -763,8 +763,6 @@ Banner Style
 }
 
 
-
-
 .main-banner .item span.category {
   background-color: #fff;
   color: #1e1e1e;
@@ -847,6 +845,119 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 
+---------------------------------------------
+other banner
+--------------------------------------------- 
+*/
+.other-banner .item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 20% 320px 20%;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+.other-banner .item-5 {
+  background-image: url(../images/deal-01.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+.other-banner .item-6 {
+  background-image: url(../images/deal-01.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.other-banner .item-7 {
+  background-image: url(../images/deal-01.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.other-banner .item span.category {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 6px 15px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.other-banner .item span.category em {
+  font-style: normal;
+  color: #4E8A3E;
+}
+
+.other-banner.item h2 {
+  font-size: 62px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 72px;
+  width: 70%;
+  margin-bottom: 0px;
+}
+
+.other-banner .owl-dots {
+  position: absolute;
+  bottom: 60px;
+  left: 20%;
+}
+
+.other-banner .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all .5s;
+}
+
+.other-banner.owl-dots .active {
+  background-color: #4E8A3E;
+}
+
+.other-banner .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50px);
+}
+
+.other-banner.owl-nav .owl-prev i,
+.other-banner .owl-nav .owl-next i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.other-banner .owl-nav .owl-prev i {
+  position: absolute;
+  left: 45px;
+}
+
+.other-banner .owl-nav .owl-next i {
+  position: absolute;
+  right: 45px;
+}
+
+.other-banner .owl-nav .owl-prev i:hover,
+.other-banner .owl-nav .owl-next i:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 /* 
@@ -1883,4 +1994,62 @@ tr:nth-child(even) {
 Gallery
 --------------------------------------------- 
 */
+.gallery {
+  position: relative;
+}
 
+.main-image img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  top: 40%; 
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+  padding: 0 50px;
+}
+
+.controls i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls i:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.thumbnails img.active {
+  opacity: 1;
+}

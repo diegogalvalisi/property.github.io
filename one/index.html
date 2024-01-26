@@ -54,10 +54,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-4">
           <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/protopia_community/" target="_blank"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
@@ -282,13 +279,13 @@ https://templatemo.com/tm-591-villa-agency
                     <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Main</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Kitchen</button>
+                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false"><i class="fa-solid fa-kitchen-set"></i> Kitchen</button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Octogon</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Bedrooms</button>
+                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false"><i class="fa-solid fa-bed"></i> Bedrooms</button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Bathrooms</button>
@@ -310,7 +307,68 @@ https://templatemo.com/tm-591-villa-agency
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-01.jpg" alt="">
+                      <div class="gallery">
+
+                        <div class="main-image">
+                          <img src="assets/images/deal-01.jpg" id="current">
+                        </div>
+                      
+                        <div class="controls">
+                          <i class="fas fa-arrow-left" id="prev"></i>
+                          <i class="fas fa-arrow-right" id="next"></i> 
+                        </div>
+                      
+                        <div class="thumbnails">
+                          <img src="assets/images/deal-01.jpg" class="active">
+                          <img src="assets/images/deal-02.jpg">
+                          <img src="assets/images/deal-03.jpg">
+                          <img src="assets/images/deal-01.jpg">
+                          <img src="assets/images/deal-01.jpg">
+                        </div>
+                        <script>
+                          let currentIndex = 0;
+
+document.querySelectorAll('.thumbnails img').forEach(item => {
+  item.addEventListener('click', function(){
+    
+    currentIndex = parseInt(this.dataset.index);
+    updateGallery();
+  })
+})
+
+const updateGallery = () => {
+  
+  let currentImage = document.querySelectorAll('.thumbnails img')[currentIndex];
+  document.querySelector('.main-image img').src = currentImage.src;
+  
+  document.querySelectorAll('.thumbnails img').forEach(item => {
+    item.classList.remove('active');
+  })
+  
+  currentImage.classList.add('active');
+}
+
+document.getElementById('next').addEventListener('click', () => {
+  currentIndex++;
+  
+  if(currentIndex > 4) {
+    currentIndex = 0;
+  }
+  
+  updateGallery();
+})
+
+document.getElementById('prev').addEventListener('click', () => {
+  currentIndex--;
+  
+  if(currentIndex < 0) {
+    currentIndex = 4;
+  }
+  
+  updateGallery();
+})
+                      </script>
+                      </div>
                     </div>
                     <div class="col-lg-3">
                       <h4>Extra Info About Property</h4>
