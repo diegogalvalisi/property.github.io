@@ -2124,7 +2124,7 @@ Gallery
   cursor: pointer;
 }
 .gallery .gallery-item:hover {
-  transform: scale(1.015);
+  transform: scale(1.03);
 }
 @media (max-width: 600px) {
   .gallery {
