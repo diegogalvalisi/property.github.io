@@ -1,0 +1,64 @@
+<div class="col-lg-6">
+  <div class="gallery">
+
+    <div class="main-image">
+      <img src="assets/images/deal-01.jpg" id="current">
+    </div>
+  
+    <div class="controls">
+      <i class="fas fa-arrow-left" id="prev"></i>
+      <i class="fas fa-arrow-right" id="next"></i> 
+    </div>
+  
+    <div class="thumbnails">
+      <img src="assets/images/deal-01.jpg" class="active">
+      <img src="assets/images/deal-02.jpg">
+      <img src="assets/images/deal-03.jpg">
+      <img src="assets/images/deal-01.jpg">
+      <img src="assets/images/deal-01.jpg">
+    </div>
+    <script>
+      let currentIndex = 0;
+
+document.querySelectorAll('.thumbnails img').forEach(item => {
+item.addEventListener('click', function(){
+
+currentIndex = parseInt(this.dataset.index);
+updateGallery();
+})
+})
+
+const updateGallery = () => {
+
+let currentImage = document.querySelectorAll('.thumbnails img')[currentIndex];
+document.querySelector('.main-image img').src = currentImage.src;
+
+document.querySelectorAll('.thumbnails img').forEach(item => {
+item.classList.remove('active');
+})
+
+currentImage.classList.add('active');
+}
+
+document.getElementById('next').addEventListener('click', () => {
+currentIndex++;
+
+if(currentIndex > 4) {
+currentIndex = 0;
+}
+
+updateGallery();
+})
+
+document.getElementById('prev').addEventListener('click', () => {
+currentIndex--;
+
+if(currentIndex < 0) {
+currentIndex = 4;
+}
+
+updateGallery();
+})
+  </script>
+  </div>
+</div>
