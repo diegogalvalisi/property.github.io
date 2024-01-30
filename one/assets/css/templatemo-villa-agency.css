@@ -2109,7 +2109,7 @@ Slider small
   width: 50%;
   height: auto;
   display: block;
-  box-shadow: 3px 3px 5px #888888; /* Add a subtle shadow effect, adjust as needed */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   margin: 20px auto;
 }
 
