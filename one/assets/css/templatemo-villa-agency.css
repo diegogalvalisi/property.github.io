@@ -2100,6 +2100,9 @@ Slider small
 .image-container {
   width: 100%;
   margin-top: 20px; /* Adjust the margin to control the space between the table and the image */
+  background-color: #f9f9f9; /* Set a background color, adjust as needed */
+  padding: 20px; /* Add padding for better appearance */
+
 }
 
 .image-container img {
