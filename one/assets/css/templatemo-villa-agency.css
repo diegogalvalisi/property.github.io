@@ -414,7 +414,6 @@ Header Style
 .header-area .main-nav .logo h1 {
   line-height: 100px;
   font-size: 28px;
-  text-transform: uppercase;
   color: #1e1e1e;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2075,6 +2074,19 @@ Slider small
   opacity: 1;
 }
 
+.sale {
+  
+  padding: 6px 10px;
+  background: url('../images/wood2.png'); /* Replace 'wood-texture.jpg' with the path to your wood texture image */
+  background-size: cover; /* Adjust as needed: 'cover', 'contain', or specific dimensions */
+  background-repeat: repeat; /* Adjust to control image repetition: 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat' */
+  color: #ffffff; /* White text for contrast */
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #888888; /* Box shadow for a subtle effect */
+  font-size: 20px;
+  
+}
 
 /* 
 ---------------------------------------------
