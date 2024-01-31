@@ -1999,17 +1999,21 @@ table {
   border-top: 2px solid #ddd; /* Adjust the color as needed for additional borders */
 }
 
-th, td {
+td {
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
   border: 2px dotted #ddd;
+  min-width: 300px;
   
 }
 
 th {
   border: none;
-
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 2px dotted #ddd;
   color: #4E8A3E;
 }
 
