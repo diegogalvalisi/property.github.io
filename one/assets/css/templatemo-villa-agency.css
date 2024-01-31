@@ -2090,7 +2090,7 @@ Slider small
   background-size: cover; /* Adjust as needed: 'cover', 'contain', or specific dimensions */
   background-repeat: repeat; /* Adjust to control image repetition: 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat' */
   color: #ffffff; /* White text for contrast */
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 6px;
   box-shadow: 2px 2px 4px #888888; /* Box shadow for a subtle effect */
   font-size: 20px;
