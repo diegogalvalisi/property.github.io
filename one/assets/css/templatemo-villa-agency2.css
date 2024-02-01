@@ -140,7 +140,6 @@ body {
 .section-heading h2 {
   font-size: 30px;
   font-weight: 700;
-  text-transform: capitalize;
   margin-top: 20px;
   line-height: 36px;
 }
@@ -449,11 +448,10 @@ Header Style
   display: block;
   padding-left: 20px;
   padding-right: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   height: 40px;
   line-height: 40px;
-  text-transform: capitalize;
   color: #1e1e1e;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -682,7 +680,6 @@ Header Style
   .header-area .nav li:last-child a {
     background-color: transparent !important;
     font-weight: 300 !important;
-    text-transform: capitalize !important;
   }
   .header-area {
     padding: 0px 15px;
@@ -764,20 +761,18 @@ Banner Style
 
 
 .main-banner .item span.category {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  background-color: #fff;
+  color: #1e1e1e;
   font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
+  font-weight: 500;
   padding: 6px 15px;
   display: inline-block;
   margin-bottom: 30px;
-  border-radius: 10px;
 }
 
 .main-banner .item span.category em {
   font-style: normal;
+  color: #4E8A3E;
 }
 
 .main-banner .item h2 {
@@ -785,7 +780,7 @@ Banner Style
   font-weight: 700;
   color: #fff;
   line-height: 72px;
-  width: 80%;
+  width: 70%;
   margin-bottom: 0px;
 }
 
@@ -882,11 +877,9 @@ other banner
   color: #1e1e1e;
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize;
   padding: 6px 15px;
   display: inline-block;
   margin-bottom: 30px;
-
 }
 
 .other-banner .item span.category em {
@@ -994,7 +987,7 @@ Featured Style
 }
 
 .featured .section-heading h2 {
-  width: 70%;
+  width: 72%;
 }
 
 .featured .accordion {
@@ -1201,7 +1194,7 @@ Best Deal Style
 
 .best-deal .tabs-content .nav-link {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #1e1e1e !important;
   border-radius: 5px;
   height: 50px;
@@ -1277,6 +1270,10 @@ Best Deal Style
 }
 
 
+
+
+
+
 /* 
 ---------------------------------------------
 Properties Style
@@ -1303,7 +1300,6 @@ Properties Style
   padding: 5px 12px;
   display: inline-block;
   margin-top: 25px;
-  
 }
 
 .properties .item h4 {
@@ -1546,7 +1542,6 @@ Properties Style
   display: inline-block;
   text-align: center;
   font-size: 15px;
-  text-transform: capitalize;
   font-weight: 500;
   color: #fff;
   background-color: #1e1e1e;
@@ -1975,14 +1970,13 @@ table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
-  table-layout: fixed;
-
+  
   background-color: #fff;
   
 }
 
 .tbtitle{
-  width: 200px;
+  width: 300px;
   color: #4E8A3E;
   margin: 30px auto;
   text-align: center;
@@ -1998,23 +1992,18 @@ table {
   border-top: 2px solid #ddd; /* Adjust the color as needed for additional borders */
 }
 
-td, th {
-  padding: 15px;
- 
-}
-
 td {
-
+  padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
   border: 2px dotted #ddd;
-  
+  min-width: 300px;
   
 }
 
 th {
   border: none;
- 
+  padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
   border: 2px dotted #ddd;
@@ -2024,16 +2013,6 @@ th {
 tr:nth-child(even) {
   background-color: #f5f5f5;
   
-}
-
-th:first-child, 
-td:first-child {
-  width: 20%;
-}
-
-th:nth-child(2),
-td:nth-child(2) {
-  width: 60%;  
 }
 
 /* 
@@ -2104,13 +2083,13 @@ Slider small
 .sale {
   
   padding: 6px 10px;
+  background: url('../images/wood3.png'); /* Replace 'wood-texture.jpg' with the path to your wood texture image */
   background-size: cover; /* Adjust as needed: 'cover', 'contain', or specific dimensions */
   background-repeat: repeat; /* Adjust to control image repetition: 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat' */
-  color: #4E8A3E; /* White text for contrast */
+  color: #ffffff; /* White text for contrast */
   font-weight: 600;
   border-radius: 6px;
-  border:3px solid #4E8A3E;
-  box-shadow: 2px 2px 3px #888888; /* Box shadow for a subtle effect */
+  box-shadow: 2px 2px 4px #888888; /* Box shadow for a subtle effect */
   font-size: 20px;
   
 }
