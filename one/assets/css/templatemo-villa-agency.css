@@ -789,6 +789,8 @@ Banner Style
   margin-bottom: 0px;
 }
 
+
+
 .main-banner .owl-dots {
   position: absolute;
   bottom: 60px;
@@ -1884,6 +1886,7 @@ body {
   }
   .main-banner .item h2 {
     width: 100%;
+    font-size: 2em;
   }
   .featured .section-heading {
     margin-left: 0px;

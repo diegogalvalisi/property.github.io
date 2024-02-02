@@ -1829,7 +1829,10 @@ body {
   .logo {
     max-width: 200px;
   }
+  
 }
+
+
 
 
 @media (max-width: 767px) {
@@ -1852,15 +1855,33 @@ body {
   .properties ul.properties-filter li {
     margin: 5px;
   }
+  /*
   .header-area .main-nav .nav li:last-child {
     display: none;
+  }
+  */
+ 
+}
+
+@media screen and (min-width: 768px) {
+  .appear {
+    display: none; /* Hide the item on larger screens */
   }
 }
 
 @media (max-width: 992px) {
+
   .sub-header {
     display: none;
   }
+  
+
+
+   .info{
+    display: none;
+   
+  }
+ 
   .header-area .main-nav .logo h1 {
     line-height: 100px;
   }
@@ -1871,11 +1892,14 @@ body {
     padding-left: 3px;
     padding-right: 3px;
   }
-  .header-area .main-nav .nav li:last-child a {
-    padding-right: 15px;
+  #wp {
+    display: none;
   }
   .main-banner .item h2 {
     width: 100%;
+    font-size: 2.5em;
+    line-height: 1.25em;
+    
   }
   .featured .section-heading {
     margin-left: 0px;
