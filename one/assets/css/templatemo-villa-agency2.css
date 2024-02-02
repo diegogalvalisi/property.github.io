@@ -1099,6 +1099,7 @@ Video Style
   border-radius: 10px;
 }
 
+
 .video-content .video-frame iframe {
   border-radius: 10px;
 }
@@ -1844,6 +1845,7 @@ body {
     padding: 0px 15px;
     height: 44px;
     line-height: 44px;
+    margin-top:10px;
   }
   .best-deal .tabs-content ul.nav-tabs li {
     margin: 0px 5px;
@@ -1923,6 +1925,7 @@ body {
     margin-top: 0px;
     justify-content: center;
   }
+  
   .best-deal .info-table {
     margin-bottom: 45px;
   }
