@@ -737,30 +737,25 @@ Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 220px 20% 320px 20%;
+  padding: 20% 20%;
   margin-top: 0px;
   background-color: rgba(0, 0, 0, 1);
-  
 }
 
 .main-banner .item-1 {
   background-image: url(../images/banner-01.jpg);
   background-color: rgba(0, 0, 0, 0.7);
-  
 }
 
 .main-banner .item-2 {
   background-image: url(../images/banner-02.jpg);
   background-color: rgba(0, 0, 0, 0.7);
-
 }
 
 .main-banner .item-3 {
   background-image: url(../images/banner-03.jpg);
   background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
 }
-
 
 .main-banner .item span.category {
   background-color: #fff;
@@ -843,18 +838,23 @@ Banner Style
 }
 
 @media (max-width: 767px) {
- 
+  .main-banner .item {
+    padding: 10% 10%; /* Adjusted padding for smaller screens */
+  }
+
   .main-banner .owl-nav .owl-prev i {
-    position: absolute;
-    left: 15px;
+    left: 10px; /* Adjusted left position for smaller screens */
   }
-  
+
   .main-banner .owl-nav .owl-next i {
-    position: absolute;
-    right: 15px;
+    right: 10px; /* Adjusted right position for smaller screens */
   }
-  
+  /* Hide dots on mobile */
+  .main-banner .owl-dots {
+    display: none;
+  }
 }
+
 
 /* 
 ---------------------------------------------
