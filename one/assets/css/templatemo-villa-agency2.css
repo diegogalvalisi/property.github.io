@@ -843,18 +843,30 @@ Banner Style
     padding: 10% 10%; /* Adjusted padding for smaller screens */
   }
 
+
   .main-banner .owl-nav .owl-prev i {
-    left: 10px; /* Adjusted left position for smaller screens */
+    left: 5px; /* Adjusted left position for smaller screens */
   }
 
   .main-banner .owl-nav .owl-next i {
-    right: 10px; /* Adjusted right position for smaller screens */
+    right: 0px; /* Adjusted right position for smaller screens */
   }
   /* Hide dots on mobile */
   .main-banner .owl-dots {
     display: none;
   }
+
+  .main-banner .item h2{
+  font-size: 1.5em;
+  line-height: 1.25em;
 }
+.main-banner .item span.category {
+  font-size: 0.5em;
+}
+}
+
+
+
 
 
 /* 
@@ -1930,12 +1942,7 @@ body {
   #wp {
     display: none;
   }
-  .main-banner .item h2 {
-    width: 100%;
-    font-size: 2.5em;
-    line-height: 1.25em;
-    
-  }
+  
   .featured .section-heading {
     margin-left: 0px;
     margin-right: 0px;
