@@ -1015,6 +1015,12 @@ Featured Style
   width: 72%;
 }
 
+@media (max-width: 767px) {
+  .featured .section-heading h2 {
+    width: 100%;
+  }
+}
+
 .featured .accordion {
   margin-left: 10px;
   margin-right: 10px;
