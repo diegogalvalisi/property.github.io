@@ -842,6 +842,20 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 767px) {
+ 
+  .main-banner .owl-nav .owl-prev i {
+    position: absolute;
+    left: 15px;
+  }
+  
+  .main-banner .owl-nav .owl-next i {
+    position: absolute;
+    right: 15px;
+  }
+  
+}
+
 /* 
 ---------------------------------------------
 other banner
