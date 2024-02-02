@@ -413,7 +413,22 @@
     .container {
       grid-gap: 10px; 
     }
+    .container > div:hover,
+    .container > div:hover img {
+      transform: none;
+      cursor: default;
+    }
+    .container > div {
+      box-shadow: none;
+    }
     
+    .container img {
+      transition: none; 
+    }
+    
+    .arrowButton {
+      display: none;
+    }
   }
 
 
