@@ -737,24 +737,25 @@ Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20% 20%;
+  padding: 10% 20%;
   margin-top: 0px;
-  background-color: rgba(0, 0, 0, 1);
+  position: relative;
 }
 
 .main-banner .item-1 {
   background-image: url(../images/banner-01.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .main-banner .item-2 {
   background-image: url(../images/banner-02.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
+  
+
 }
 
 .main-banner .item-3 {
   background-image: url(../images/banner-03.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .main-banner .item span.category {
@@ -774,7 +775,7 @@ Banner Style
 
 .main-banner .item h2 {
   font-size: 62px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   line-height: 72px;
   width: 70%;
