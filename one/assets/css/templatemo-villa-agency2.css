@@ -983,6 +983,15 @@ Featured Style
   padding-left: 55px;
 }
 
+@media (max-width: 767px) {
+ 
+  .featured .left-image img {
+    padding-left: 0px;
+  }
+  
+  
+}
+
 .featured .left-image a {
   display: inline-block;
   width: 110px;
