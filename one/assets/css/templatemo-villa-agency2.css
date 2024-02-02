@@ -845,11 +845,11 @@ Banner Style
 
 
   .main-banner .owl-nav .owl-prev i {
-    left: 5px; /* Adjusted left position for smaller screens */
+    left: 10px; /* Adjusted left position for smaller screens */
   }
 
   .main-banner .owl-nav .owl-next i {
-    right: 0px; /* Adjusted right position for smaller screens */
+    right: 10px; /* Adjusted right position for smaller screens */
   }
   /* Hide dots on mobile */
   .main-banner .owl-dots {
