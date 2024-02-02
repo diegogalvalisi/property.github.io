@@ -1018,6 +1018,7 @@ Featured Style
 @media (max-width: 767px) {
   .featured .section-heading h2 {
     width: 100%;
+    font-size: 2em;
   }
 }
 
